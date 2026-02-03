@@ -7,7 +7,7 @@ const cat = document.getElementById("cat");
 yesBtn.addEventListener("click", () => {
   yesBtn.style.transform = "scale(1.2)";
   setTimeout(() => { yesBtn.style.transform = "scale(1)"; }, 300);
-  response.innerText = "ልቤን አስቀምጠሽኝ 💖😂";
+  response.innerText = "እችላለው እኔ እችላለው 💯 💖😂";
   cat.style.display = "block";
 });
 
