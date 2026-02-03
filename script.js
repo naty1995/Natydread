@@ -7,7 +7,7 @@ const cat = document.getElementById("cat");
 yesBtn.addEventListener("click", () => {
   yesBtn.style.transform = "scale(1.2)";
   setTimeout(() => { yesBtn.style.transform = "scale(1)"; }, 300);
-  response.innerText = "እችላለው እኔ እችላለው 💯 💖😂";
+  response.innerText = "You unlocked the best ending 🎉❤️ 💯";
   cat.style.display = "block";
 });
 
@@ -42,7 +42,7 @@ noBtn.addEventListener("mouseover", moveNoButton);
 setInterval(() => {
   const heart = document.createElement("div");
   heart.classList.add("heart");
-  heart.innerText = "😍🥰";
+  heart.innerText = "💖";
   heart.style.left = Math.random() * 100 + "vw";
   heart.style.fontSize = (20 + Math.random() * 30) + "px";
   document.body.appendChild(heart);
