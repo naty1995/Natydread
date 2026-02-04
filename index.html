@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Be My Valentine 💖</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Just for You 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-  <h1>ሰላም Panda 🐼💕</h1>
-  <p>Can I steal your heart this Valentine’s?</p>
+<div class="card">
 
-  <div class="buttons">
-    <button id="yesBtn">Yes ❤️</button>
-    <button id="noBtn">No 💔</button>
+  <!-- START SCREEN -->
+  <div id="startScreen">
+    <p class="intro">Hey… I have something to ask you 💗</p>
+    <button id="startBtn">Tap to start ✨</button>
   </div>
 
-  <h2 id="response"></h2>
-  <img id="cat" src="18.gif" alt="Cute Cat" style="display:none;">
+  <!-- PROPOSAL SCREEN -->
+  <div id="proposalScreen" class="hidden">
+    <div id="proposal">Can i steel your heart ? 💘</div>
+    <div class="buttons hidden" id="choiceButtons">
+      <button id="yesBtn">Yes 💖</button>
+      <button id="noBtn">No 🙈</button>
+    </div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen" class="hidden">
+    <div id="result">አይ ማለት አልቻለችም 😭❤️</div>
+    <img id="cat" src="cat.jpg" alt="cute cat">
+  </div>
+
 </div>
+
+<!-- HEARTBEAT SOUND -->
+<audio id="heartbeat" src="heartbeat.mp3"></audio>
 
 <script src="script.js"></script>
 </body>
